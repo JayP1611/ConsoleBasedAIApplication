@@ -35,3 +35,7 @@ try
  }
 
 	Serialize is a method where we convert the objects of a datatype to JSON as the APIs accepts the JSON formats. The full code for the console-based application where the user can interact with the AI, with the help of API (Application Programming Interface). 
+
+The link to OneDrive for Video Explanation of the application - 
+https://deakin365-my.sharepoint.com/personal/s224970276_deakin_edu_au/_layouts/15/stream.aspx?id=%2Fpersonal%2Fs224970276%5Fdeakin%5Fedu%5Fau%2FDocuments%2FApplication%20Explanation%20Video%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef76a44ba%2Da543%2D45a2%2Dadb9%2D5da03c7fe2af
+ 
