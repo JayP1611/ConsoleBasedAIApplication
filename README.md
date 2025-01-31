@@ -36,14 +36,12 @@ TO hit the Hugging Face with the API, we need an HttpClient to hit the POST requ
 The using keyword, specifically, is used for an IDisposable resources where, after the use of the resource, the resource is disposed by calling the Dispose() method.
 
 ![Image](https://github.com/user-attachments/assets/4b50ff78-d90c-43c3-bb72-a817984cbd68) 
-Figure 2. Example of "using" keyword
 
 In the above code snippet, the file named “TestFile.txt” is read with the help of StreamReader class, the contents of the file are stored in the line variable and after the cursor exits the while loop, the “TestFile.txt” is Disposed() as it is of no use and hence, the file resource is efficiently managed and used.
 Here within the code, the using keyword is used to initialize the HttpClient, POST the request to the AI with the help of API and get the response from the AI. 
 The POST request given to the Hugging face must have the parameters in Json format, that is, in a key value pair. Initially, we have to do Serialization of the asynchronous so that it can be interpreted at the time of API request. Serialize is a method where we convert the objects of a datatype to JSON as the APIs accepts the JSON formats. The full code for the console-based application where the user can interact with the AI, with the help of API (Application Programming Interface). 
 
 ![Image](https://github.com/user-attachments/assets/98b292aa-c1f6-4ae9-a5de-55e58bffbbe7)
-Figure 3. Example of "serialization”
 
 This is how the serialization takes place, and the data is converted accordingly. Within the application code, a object named requestBody is made with the field as “inputs” and the value of the field as “prompt”, which is taken from the user.
 On the other hand, the Deserialize operation is performed to convert the JSON data back to object. Within this JSON data, the “generated_text” is extracted, which has the required answer to the user prompt. 
@@ -54,7 +52,6 @@ The try catch block basically has two block –
 The traditional structure of a try-catch block is given as -
 
 ![Image](https://github.com/user-attachments/assets/35e2f6bb-e71e-40db-b9d1-d1f9fb3a0a49)
-Figure 4. Structure of try-catch block
 
 With the application code, the error handling is performed as – 
 
